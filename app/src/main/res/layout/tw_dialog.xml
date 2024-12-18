@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@drawable/one_item_value_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tw_list_than"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/tw_item_main_ui" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/tw_item_main"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_weight="1.3"
+                android:background="#ccc"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_weight="0.7"
+                android:weightSum="3"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tw_item_rgb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RGB:12,1,21"
+                    android:textSize="17sp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:textColor="#000"
+                    android:background="@drawable/one_item_value_bg"/>
+
+                <TextView
+                    android:id="@+id/tw_item_hex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RGB:12,1,21"
+                    android:textSize="17sp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:background="@drawable/one_item_value_bg"/>
+
+                <TextView
+                    android:id="@+id/tw_item_cmyk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RGB:12,1,21"
+                    android:textSize="17sp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:background="@drawable/one_item_value_bg"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="1dp"
+                android:layout_gravity="end">
+
+                <ImageButton
+                    android:id="@+id/tw_item_del"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/ic_del"
+                    android:src="@drawable/th_color_rectangle" />
+
+                <ImageButton
+                    android:id="@+id/tw_item_out"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_toEndOf="@id/tw_item_del"
+                    android:background="@drawable/ic_exitone"
+                    android:src="@drawable/th_color_rectangle" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tw_item_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="122"
+                android:gravity="center"
+                android:textColor="#A4A4A4"
+                android:textSize="10sp"
+                android:layout_margin="6dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

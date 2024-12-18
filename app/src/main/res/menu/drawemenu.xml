@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_home"
+        android:icon="@drawable/ic_homeone"
+        android:title="主页"/>
+    <item android:id="@+id/menu_color_hsv"
+        android:icon="@drawable/ic_hsv"
+        android:title="色环HSV"/>
+    <item android:id="@+id/menu_color"
+        android:icon="@drawable/ic_china"
+        android:title="中国颜色"/>
+    <item android:id="@+id/menu_set"
+        android:icon="@drawable/ic_setone"
+        android:title="设置"/>
+    <item android:id="@+id/menu_about"
+        android:icon="@drawable/ic_aboutone"
+        android:title="关于"/>
+    <item android:id="@+id/menu_out"
+        android:icon="@drawable/ic_outone"
+        android:title="退出"/>
+</menu>
